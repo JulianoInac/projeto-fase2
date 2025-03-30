@@ -1,0 +1,114 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*padding-top: 56px;*/
+}
+
+/* Carrossel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Cards de produtos */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Botão de acessibilidade */
+.accessibility-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.accessibility-btn button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Modo alto contraste */
+.high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.high-contrast .bg-light {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.high-contrast .card {
+    background-color: #222 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+.high-contrast .text-dark {
+    color: #fff !important;
+}
+
+/* Validação de formulário */
+.was-validated .form-control:invalid, 
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.was-validated .form-control:valid, 
+.form-control.is-valid {
+    border-color: #198754;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    body {
+        
+    }
+}
